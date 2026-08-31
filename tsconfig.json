@@ -23,9 +23,7 @@
     "skipLibCheck": false
   },
   "include": [
-    "server.ts",
-    "app.tsx",
-    "modes.ts",
-    "mode-message.ts"
+    "src/**/*.ts",
+    "src/**/*.tsx"
   ]
 }

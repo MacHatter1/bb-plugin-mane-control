@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import { createFakePluginHost } from "@get-bb/plugin-sdk/testing";
-import plugin from "./server.ts";
-import { ponytailMessageMode } from "./mode-message.ts";
+import plugin from "../src/server.ts";
+import { ponytailMessageMode } from "../src/lib/mode-message.ts";
 
 assert.equal(ponytailMessageMode(" /PONYTAIL OFF "), "off");
 assert.equal(ponytailMessageMode("Please use /ponytail off"), null);

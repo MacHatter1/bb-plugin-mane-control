@@ -4,10 +4,10 @@ import { HugeiconsIcon } from "@hugeicons/react";
 import { useCallback, useEffect, useState } from "react";
 import { definePluginApp, useComposer, useRealtime, useRpc } from "@get-bb/plugin-sdk/app";
 import { toast } from "sonner";
-import { ponytailModes, type PonytailMode } from "./modes.ts";
-import { ponytailMessageMode } from "./mode-message.ts";
+import { ponytailModes, type PonytailMode } from "./lib/modes.ts";
+import { ponytailMessageMode } from "./lib/mode-message.ts";
 import type { rpcContract } from "./server.ts";
-import "./app.css";
+import "./styles.css";
 
 const descriptions: Record<PonytailMode, string> = {
   off: "Disable Ponytail",

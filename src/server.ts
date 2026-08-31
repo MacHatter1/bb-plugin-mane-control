@@ -1,6 +1,6 @@
 import { defineRpcContract, type BbPluginApi } from "@get-bb/plugin-sdk";
 import { z } from "zod";
-import { ponytailModes, type PonytailMode } from "./modes.ts";
+import { ponytailModes, type PonytailMode } from "./lib/modes.ts";
 
 const modeSchema = z.enum(ponytailModes);
 
