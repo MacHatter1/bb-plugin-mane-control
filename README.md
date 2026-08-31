@@ -11,26 +11,15 @@ current selection on the trigger. Mode-command messages render as compact
 
 ## Showcase
 
-These headless Playwright captures show the plugin running inside BB. The
-thread content is disposable fixture data; the interface and plugin are real.
+These screenshots use disposable fixture data in a real BB thread.
 
-![Mane Control in BB with fixture thread data](output/playwright/mane-control-thread.png)
+| Thread control | Mode menu |
+| --- | --- |
+| ![Mane Control in BB](output/playwright/mane-control-thread.png) | ![Ponytail mode menu](output/playwright/mane-control-menu.png) |
 
-![Ponytail mode menu](output/playwright/mane-control-menu.png)
-
-### Switch to Lite
-
-The real menu action updates both the styled thread message and the current
-mode shown by the composer control.
-
-![Mane Control switched to Lite in BB](output/playwright/mane-control-lite.png)
-
-### Switch to Ultra
-
-Switching again preserves the visible mode history and moves the menu's current
-selection to Ultra.
-
-![Mane Control switched from Lite to Ultra in BB](output/playwright/mane-control-ultra.png)
+| Lite mode | Ultra mode |
+| --- | --- |
+| ![Mane Control switched to Lite](output/playwright/mane-control-lite.png) | ![Mane Control switched from Lite to Ultra](output/playwright/mane-control-ultra.png) |
 
 ## Project layout
 
