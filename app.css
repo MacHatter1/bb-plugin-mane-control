@@ -1,0 +1,41 @@
+[data-mane-control-message] {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  border: 1px solid var(--border);
+  border-radius: 9999px;
+  background: var(--muted);
+  padding: 0.25rem 0.625rem;
+  color: var(--muted-foreground);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0;
+  font-weight: 600;
+  line-height: 1rem;
+}
+
+[data-mane-control-message]::before {
+  content: "";
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.375rem;
+  background: var(--foreground);
+  mask: var(--mane-control-icon) center / contain no-repeat;
+  -webkit-mask: var(--mane-control-icon) center / contain no-repeat;
+}
+
+[data-mane-control-message]::after {
+  font-size: 0.75rem;
+}
+
+[data-mane-control-message="off"]::after { content: "Ponytail · Off"; }
+[data-mane-control-message="lite"]::after { content: "Ponytail · Lite"; }
+[data-mane-control-message="full"]::after { content: "Ponytail · Full"; }
+[data-mane-control-message="ultra"]::after { content: "Ponytail · Ultra"; }
+
+[data-mane-control-message="ultra"] {
+  border-color: color-mix(in srgb, var(--primary) 45%, transparent);
+  color: var(--foreground);
+  box-shadow: 0 0 14px color-mix(in srgb, var(--primary) 25%, transparent);
+}
+
+[data-mane-control-message="ultra"]::before { background: var(--primary); }
