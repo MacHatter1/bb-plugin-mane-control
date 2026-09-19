@@ -1,14 +1,14 @@
 # Mane Control
 
-> Requires [Ponytail](https://github.com/DietrichGebert/ponytail) to be installed
-> and enabled for the thread's provider environment. Mane Control detects the
-> `ponytail` skill (plugin install or user/registry skill such as skills.sh)
-> and blocks mode changes when the prerequisite is missing.
+Flips Ponytail between Off, Lite, Full, and Ultra from a horse button beside
+the thread composer. Choosing a mode sends `/ponytail` into the thread and
+keeps the active mode on the control. Mode-command messages render as compact
+`Ponytail · Mode` status pills in the transcript.
 
-A tiny BB plugin that puts a horse button beside the thread composer. Its menu
-immediately switches Ponytail between Off, Lite, Full, and Ultra, and shows the
-current selection on the trigger. Mode-command messages render as compact
-`Ponytail · Mode` status pills while retaining the real command underneath.
+> Requires [Ponytail](https://github.com/DietrichGebert/ponytail) for the
+> thread's provider. Mane Control detects the `ponytail` skill from a plugin
+> install, a user skill, or a registry install such as skills.sh, and blocks
+> mode changes when it is missing.
 
 ## Showcase
 
@@ -28,6 +28,7 @@ These screenshots use disposable fixture data in a real BB thread.
 - `src/lib/` — shared mode parsing and types
 - `test/` — backend and message-recognition checks
 - `assets/` — theme-aware horse icons
+- `PLUGIN_OVERVIEW.md` — long-form store overview
 - `output/playwright/` — privacy-safe captures from the running BB app
 
 ```sh
