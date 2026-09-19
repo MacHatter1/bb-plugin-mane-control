@@ -1,6 +1,7 @@
 import { defineRpcContract, type BbPluginApi } from "@get-bb/plugin-sdk";
 import { z } from "zod";
 import { ponytailModes, type PonytailMode } from "./lib/modes.ts";
+import { isPonytailSkill } from "./lib/ponytail-skill.ts";
 
 const modeSchema = z.enum(ponytailModes);
 
@@ -23,11 +24,7 @@ export default function plugin(bb: BbPluginApi) {
       projectId: thread.projectId,
       environmentId: thread.environmentId,
     });
-    return skills.some(
-      (skill) =>
-        skill.pluginId === "ponytail" &&
-        (skill.name === "ponytail" || skill.name.endsWith(":ponytail")),
-    );
+    return skills.some(isPonytailSkill);
   };
 
   bb.rpc.register(rpcContract, {

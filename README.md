@@ -2,7 +2,8 @@
 
 > Requires [Ponytail](https://github.com/DietrichGebert/ponytail) to be installed
 > and enabled for the thread's provider environment. Mane Control detects the
-> `ponytail` skill and blocks mode changes when the prerequisite is missing.
+> `ponytail` skill (plugin install or user/registry skill such as skills.sh)
+> and blocks mode changes when the prerequisite is missing.
 
 A tiny BB plugin that puts a horse button beside the thread composer. Its menu
 immediately switches Ponytail between Off, Lite, Full, and Ultra, and shows the
