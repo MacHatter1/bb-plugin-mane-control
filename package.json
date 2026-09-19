@@ -1,6 +1,24 @@
 {
   "name": "bb-plugin-mane-control",
   "version": "0.1.2",
+  "description": "BB plugin that switches Ponytail between Off, Lite, Full, and Ultra from a horse button beside the thread composer.",
+  "license": "MIT",
+  "author": "MacHatter1",
+  "homepage": "https://github.com/MacHatter1/bb-plugin-mane-control",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MacHatter1/bb-plugin-mane-control.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MacHatter1/bb-plugin-mane-control/issues"
+  },
+  "keywords": [
+    "bb",
+    "bb-plugin",
+    "ponytail",
+    "ai-agents",
+    "developer-tools"
+  ],
   "type": "module",
   "engines": {
     "bb": ">=0.40",
